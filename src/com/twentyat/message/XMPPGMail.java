@@ -27,7 +27,7 @@ import org.jivesoftware.smack.packet.RosterPacket;
  *
  */
 public class XMPPGMail implements MessageListener {
-        private static final String HOSTNAME="cloud07";
+        private static final String HOSTNAME="ec2-50-16-41-243.compute-1.amazonaws.com";
 	XMPPConnection connection;
 
 	public void login(String userName, String password) throws XMPPException {
@@ -120,7 +120,7 @@ public class XMPPGMail implements MessageListener {
 		XMPPConnection.DEBUG_ENABLED = true;
 
 		// Enter your login information here
-		c.login("avinash", "cloud");
+		c.login("39df2116-4a06-11e0-b42b-1231380c1c57", "avinash@techingen.com");
                 //c.login("avinazz", "letmein");
                 //c.login("riddhish", "LETMEIN");
 
@@ -129,8 +129,9 @@ public class XMPPGMail implements MessageListener {
 		System.out.println("-----");
 
 		System.out.println("Who do you want to talk to? - Type contacts full email address:");
-		String talkTo = br.readLine();
-                //String appendedTalkTo = talkTo+"@ec2-184-72-184-211.compute-1.amazonaws.com";
+		//String talkTo = br.readLine();
+//                String appendedTalkTo = talkTo+"@ec2-184-72-184-211.compute-1.amazonaws.com";
+                String talkTo = "39dc9950-4a06-11e0-b42b-1231380c1c57";
                 String appendedTalkTo=talkTo+"@"+HOSTNAME;
                 
 //                try {
